@@ -12,25 +12,34 @@
     <h1>My Post Crud App</h1>
     <div class="container">
 
-        <form onsubmit="createPost()">
+        <form onsubmit="createPost(); return false">
             <h2>Create a post</h2>
 
 
             <label for="postTitle">Title</label>
             <input type="text" name="postTitle" id="post-title" placeholder="Enter your title">
 
+            <br />
 
             <label for="postText">Text</label>
             <input type="text" name="postText" id="post-text" placeholder="Enter post Text">
 
+            <br />
             <button type="submit">submit post</button>
+
+            <br />
+            <br />
+            <br />
+
         </form>
     </div>
-    <div class="resultBox">
 
-        <div id="result"></div>
-        <div id="posts"></div>
-    </div>
+
+    <div id="result"></div>
+    <br />
+    <br />
+    <div id="posts"></div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

@@ -22,7 +22,7 @@ router.use((req, res, next) => {
 
 
 router.use(commentRouter)
-router.use("/api/v1",postRouter)
+router.use(postRouter)
 router.use(feedRouter)
 
 
