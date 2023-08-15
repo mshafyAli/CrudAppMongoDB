@@ -22,7 +22,7 @@ app.use((res, req, next)=>{
   if(token == 'valid'){
     next();
   }else{
-    res.send({ message: "invalid token"});
+    res.status(401).send({ message: "invalid token"});
   }
 })
 
